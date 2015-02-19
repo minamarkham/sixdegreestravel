@@ -1,0 +1,329 @@
+// ==========================================================================
+// $FONT-FACE
+// ==========================================================================
+
+@if variable-exists(google-fonts-url) {
+  @import url($google-fonts-url);
+}
+
+@if variable-exists(fonts) {
+  @each $font-face in $fonts {
+    @font-face {
+      font-family: $font-face;
+      src: url('../fonts/#{$font-face}.eot'); // IE9 Compat Modes
+      src: url('../fonts/#{$font-face}.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+           url('../fonts/#{$font-face}.woff') format('woff'), // Modern Browsers
+           url('../fonts/#{$font-face}.ttf') format('truetype'), // Safari, Android, iOS
+           url('../fonts/#{$font-face}.svg##{$font-face}') format('svg'); // Legacy iOS
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+}
+
+
+@font-face {
+    font-family: 'sinkin_sans100_thin';
+    src: url('../fonts/SinkinSans-100Thin-webfont.eot');
+    src: url('../fonts/SinkinSans-100Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-100Thin-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-100Thin-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-100Thin-webfont.svg#sinkin_sans100_thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans900_x_black_italic';
+    src: url('../fonts/SinkinSans-900XBlackItalic-webfont.eot');
+    src: url('../fonts/SinkinSans-900XBlackItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-900XBlackItalic-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-900XBlackItalic-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-900XBlackItalic-webfont.svg#sinkin_sans900_x_black_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans900_x_black';
+    src: url('../fonts/SinkinSans-900XBlack-webfont.eot');
+    src: url('../fonts/SinkinSans-900XBlack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-900XBlack-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-900XBlack-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-900XBlack-webfont.svg#sinkin_sans900_x_black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans800_black_italic';
+    src: url('../fonts/SinkinSans-800BlackItalic-webfont.eot');
+    src: url('../fonts/SinkinSans-800BlackItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-800BlackItalic-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-800BlackItalic-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-800BlackItalic-webfont.svg#sinkin_sans800_black_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans800_black';
+    src: url('../fonts/SinkinSans-800Black-webfont.eot');
+    src: url('../fonts/SinkinSans-800Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-800Black-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-800Black-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-800Black-webfont.svg#sinkin_sans800_black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans700_bold_italic';
+    src: url('../fonts/SinkinSans-700BoldItalic-webfont.eot');
+    src: url('../fonts/SinkinSans-700BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-700BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-700BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-700BoldItalic-webfont.svg#sinkin_sans700_bold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans700_bold';
+    src: url('../fonts/SinkinSans-700Bold-webfont.eot');
+    src: url('../fonts/SinkinSans-700Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-700Bold-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-700Bold-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-700Bold-webfont.svg#sinkin_sans700_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans600SBdIt';
+    src: url('../fonts/SinkinSans-600SemiBoldItali-webfont.eot');
+    src: url('../fonts/SinkinSans-600SemiBoldItali-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-600SemiBoldItali-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-600SemiBoldItali-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-600SemiBoldItali-webfont.svg#sinkin_sans600SBdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans600_semibold';
+    src: url('../fonts/SinkinSans-600SemiBold-webfont.eot');
+    src: url('../fonts/SinkinSans-600SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-600SemiBold-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-600SemiBold-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-600SemiBold-webfont.svg#sinkin_sans600_semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans500_medium_italic';
+    src: url('../fonts/SinkinSans-500MediumItalic-webfont.eot');
+    src: url('../fonts/SinkinSans-500MediumItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-500MediumItalic-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-500MediumItalic-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-500MediumItalic-webfont.svg#sinkin_sans500_medium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans500_medium';
+    src: url('../fonts/SinkinSans-500Medium-webfont.eot');
+    src: url('../fonts/SinkinSans-500Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-500Medium-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-500Medium-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-500Medium-webfont.svg#sinkin_sans500_medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans400_regular';
+    src: url('../fonts/SinkinSans-400Regular-webfont.eot');
+    src: url('../fonts/SinkinSans-400Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-400Regular-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-400Regular-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-400Regular-webfont.svg#sinkin_sans400_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans400_italic';
+    src: url('../fonts/SinkinSans-400Italic-webfont.eot');
+    src: url('../fonts/SinkinSans-400Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-400Italic-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-400Italic-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-400Italic-webfont.svg#sinkin_sans400_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans300_light_italic';
+    src: url('../fonts/SinkinSans-300LightItalic-webfont.eot');
+    src: url('../fonts/SinkinSans-300LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-300LightItalic-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-300LightItalic-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-300LightItalic-webfont.svg#sinkin_sans300_light_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans300_light';
+    src: url('../fonts/SinkinSans-300Light-webfont.eot');
+    src: url('../fonts/SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-300Light-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-300Light-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans200_x_light_italic';
+    src: url('../fonts/SinkinSans-200XLightItalic-webfont.eot');
+    src: url('../fonts/SinkinSans-200XLightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-200XLightItalic-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-200XLightItalic-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-200XLightItalic-webfont.svg#sinkin_sans200_x_light_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans200_x_light';
+    src: url('../fonts/SinkinSans-200XLight-webfont.eot');
+    src: url('../fonts/SinkinSans-200XLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-200XLight-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-200XLight-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-200XLight-webfont.svg#sinkin_sans200_x_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans100_thin_italic';
+    src: url('../fonts/SinkinSans-100ThinItalic-webfont.eot');
+    src: url('../fonts/SinkinSans-100ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SinkinSans-100ThinItalic-webfont.woff') format('woff'),
+         url('../fonts/SinkinSans-100ThinItalic-webfont.ttf') format('truetype'),
+         url('../fonts/SinkinSans-100ThinItalic-webfont.svg#sinkin_sans100_thin_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'florencesans_scregular';
+    src: url('../fonts/Florsn17-webfont.eot');
+    src: url('../fonts/Florsn17-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Florsn17-webfont.woff2') format('woff2'),
+         url('../fonts/Florsn17-webfont.woff') format('woff'),
+         url('../fonts/Florsn17-webfont.ttf') format('truetype'),
+         url('../fonts/Florsn17-webfont.svg#florencesans_scregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'florencesans_scbold';
+    src: url('../fonts/Florsn18-webfont.eot');
+    src: url('../fonts/Florsn18-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Florsn18-webfont.woff2') format('woff2'),
+         url('../fonts/Florsn18-webfont.woff') format('woff'),
+         url('../fonts/Florsn18-webfont.ttf') format('truetype'),
+         url('../fonts/Florsn18-webfont.svg#florencesans_scbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'florencesans_scbold_italic';
+    src: url('../fonts/Florsn19-webfont.eot');
+    src: url('../fonts/Florsn19-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Florsn19-webfont.woff2') format('woff2'),
+         url('../fonts/Florsn19-webfont.woff') format('woff'),
+         url('../fonts/Florsn19-webfont.ttf') format('truetype'),
+         url('../fonts/Florsn19-webfont.svg#florencesans_scbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'florencesans_scitalic';
+    src: url('../fonts/Florsn20-webfont.eot');
+    src: url('../fonts/Florsn20-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Florsn20-webfont.woff2') format('woff2'),
+         url('../fonts/Florsn20-webfont.woff') format('woff'),
+         url('../fonts/Florsn20-webfont.ttf') format('truetype'),
+         url('../fonts/Florsn20-webfont.svg#florencesans_scitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'florencesans_sc_blackregular';
+    src: url('../fonts/Florsn35-webfont.eot');
+    src: url('../fonts/Florsn35-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Florsn35-webfont.woff2') format('woff2'),
+         url('../fonts/Florsn35-webfont.woff') format('woff'),
+         url('../fonts/Florsn35-webfont.ttf') format('truetype'),
+         url('../fonts/Florsn35-webfont.svg#florencesans_sc_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'florencesans_sc_blackitalic';
+    src: url('../fonts/Florsn36-webfont.eot');
+    src: url('../fonts/Florsn36-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Florsn36-webfont.woff2') format('woff2'),
+         url('../fonts/Florsn36-webfont.woff') format('woff'),
+         url('../fonts/Florsn36-webfont.ttf') format('truetype'),
+         url('../fonts/Florsn36-webfont.svg#florencesans_sc_blackitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

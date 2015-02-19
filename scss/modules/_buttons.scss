@@ -1,0 +1,17 @@
+.btn {
+  background: #1db4cc;
+  color: #fff;
+  text-align: center;
+  border: none;
+  padding: 1em 1.5em;
+  font-size: 1.1em;
+  &:hover { background: darken(#1db4cc, 5%) }
+  &.facebook {
+    background: #3b5a97;
+    &:hover { background: darken(#3b5a97, 5%) }
+  }
+  &.google {
+    background: #df4a32;
+    &:hover { background: darken(#df4a32, 5%) }
+  }
+}

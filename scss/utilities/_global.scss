@@ -1,0 +1,123 @@
+// ==========================================================================
+// = Global Variables
+// ==========================================================================
+
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: 1/8, // The size of a gutter in relation to a single column
+);
+
+$pesticide-debug              : false;
+
+$fix-mqs                      : false !default;
+$old-ie                       : false !default;
+
+// Color Scheme
+// examples based on the official Sass styleguide
+// =============
+
+// Descriptive colors:
+$hopbush                      : #c69;
+$bouquet                      : #b37399;
+$venus                        : #998099;
+$patina                       : #699;
+$nebula                       : #d2e1dd;
+$white                        : #fff;
+$dawn-pink                    : #f2ece4;
+$wafer                        : #e1d7d2;
+$iron                         : #dadbdf;
+$regent-grey                  : #808c99;
+$pale-sky                     : #6b717f;
+$midnight-blue                : #036;
+$black                        : #000;
+
+// Main color palette
+$color-primary                : $hopbush;
+$color-secondary              : $bouquet;
+$color-accent                 : $patina;
+$color-shadow                 : rgba($black, .125);
+$color-note                   : #666;
+
+// Common colors
+$color-background             : $white;
+$color-background-shade       : $iron;
+$color-background-invert      : $hopbush;
+$color-border                 : $iron;
+$color-text                   : darken($pale-sky, 15);
+$color-text-weak              : $regent-grey;
+$color-text-strong            : $midnight-blue;
+$color-text-heading           : $regent-grey;
+$color-text-invert            : rgba($color-background, .75);
+$color-text-strong-invert     : $color-background;
+
+// Links
+$color-link                   : $color-primary;
+$color-link-hover             : $midnight-blue;
+$color-link-visited           : $bouquet;
+
+// Code
+$color-code                   : #333;
+$color-code-background        : #f3f3f3;
+$color-pre                    : #d4d4d4;
+$color-pre-background         : #333;
+
+// Selections
+$color-selection              : #b3d4fc;
+
+// Messages
+$color-message                : #f4ecbb;
+$color-success                : #2cde2c;
+$color-warning                : #cf8600;
+$color-important              : #d00;
+$color-notice                 : #66b;
+
+
+// Base Sizes
+// ==========
+
+$base-font-size               : 13px;
+
+$base-line-height             : 1.5;
+
+
+// Font Stacks
+// ===========
+
+$font-family-sans             : 'sinkin_sans400_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-family-serif            : 'source-serif-pro', Georgia, 'Times New Roman', Times, serif;
+
+$font-family-display          : $font-family-serif;
+
+$font-family-default          : $font-family-sans;
+
+// Font Weights
+// ============
+
+$font-weight-light            : 300;
+$font-weight-normal           : 400;
+$font-weight-semibold         : 700;
+$font-weight-bold             : 900;
+
+
+// Breakpoints
+// There are no common breakpoints; examples based on the official Sass styleguide
+// You'll need to define your own breakpoints to suit your design
+// ============
+
+$mobile-small                 : 240;
+$mobile-large                 : 320;
+$tablet-small                 : 480;
+$tablet-large                 : 768;
+$screen-small                 : 1024;
+$screen-large                 : 1280;
+
+// z-index reference
+$zindex: (
+  modal                       : 9000,
+  overlay                     : 8000,
+  dropdown                    : 7000,
+  header                      : 6000,
+  footer                      : 5000,
+  pseduo                      : 4000,
+);

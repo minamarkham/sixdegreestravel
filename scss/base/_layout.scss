@@ -1,0 +1,124 @@
+.cf:after,
+.cf:before {
+  content: '';
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+}
+.wrapper {
+  width: 95%;
+  max-width: 1170px;
+  margin: 0 auto;
+  @extend .cf;
+}
+.intro {
+  color: #fff;
+  min-height: 500px;
+  background: url(../img/bg-1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.steps {
+  text-align: center;
+  padding: 1em 2em 3em;
+  > p { font-size: 1.5em; }
+}
+.highlight {
+  padding: 4em 0;
+  background: url(../img/bg-2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.social {
+  color: #fff;
+  background: #1d5668;
+}
+
+.footer{
+  color: #fff;
+  background: #1d3748;
+  @extend .cf;
+  &-ctn {
+    font-size: 0.8em;
+    line-height: 2;
+    padding: 2em 0;
+    @extend .wrapper;
+  }
+  &-sub {
+    color: #fff;
+    background: #1d2636;
+    font-size: .8em;
+    @extend .cf;
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px dotted #fff;
+      &:hover { color: darken(#fff, 25%) }
+    }
+  }
+  &-column {
+    width: 48%;
+    margin: 0 1%;
+    float: left;
+  }
+}
+
+.hero-unit {
+  text-align: center;
+}
+.featured-item {
+  background: #fff;
+  padding: 0 2em 3em;
+  overflow: hidden;
+  @extend .wrapper;
+  img {
+    float: left;
+    margin-right: 4em;
+  }
+}
+.panel-ctn {
+  background: #ece7df;
+  float: left;
+  width: 30%;
+  margin: 0 1% 2em;
+  padding: 1.5em 0;
+}
+
+.tweet {
+  padding: 1.5em 0;
+  @extend .wrapper;
+  img {
+    float: left;
+    margin-right: 1em;
+  }
+  p {margin: 0;}
+}
+
+.nav {
+  margin-top: 2em;
+  font-family: 'sinkin_sans800_black', sans-serif;
+  text-transform: uppercase;
+  ul {float: right;}
+  li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 2em;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+    &:hover { color: darken(#fff, 25%) }
+  }
+  .logo {
+    border: none;
+  }
+}

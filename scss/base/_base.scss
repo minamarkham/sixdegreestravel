@@ -1,0 +1,81 @@
+html, body {
+  height: 100%; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  font-size: 100%; }
+
+body {
+  font-family: $font-family-sans;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1 {
+  font-family: 'florencesans_sc_blackregular', sans-serif;
+  font-size: 4em;
+  line-height: 1;
+  font-weight: normal;
+}
+h2 {
+  font-size: 2.5em;
+  line-height: 0.5;
+  text-align: center;
+  margin: 1em 0;
+}
+h2 span {
+  display: inline-block;
+  position: relative;  
+}
+h2 span:before,
+h2 span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #1db4cc;
+  border-top: 1px solid #1db4cc;
+  top: 0;
+  width: 600px;
+}
+h2 span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+h2 span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+h4 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h3, h4 {
+  font-family: 'sinkin_sans700_bold', sans-serif;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 0px;
+}
+
+h6 {
+  font-size: 1.3em;
+  margin: 0;
+  letter-spacing: .1em;
+}
+
+h2, h5, h6 {
+  font-family: 'florencesans_scregular', sans-serif;
+  font-weight: normal;
+}
+section {
+  margin: 0;
+}
