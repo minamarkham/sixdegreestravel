@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js gt-ie9 ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js gt-ie9"> <!--<![endif]-->
+  <head>
+    <!--
+
+      Description:
+      Version:
+      Author:
+
+    //-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- #DNS prefetching -->
+    <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers -->
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//use.typekit.net">
+    <link rel="dns-prefetch" href="//google-analytics.com">
+
+    <!-- #Asset Prefetching -->
+    <!-- Fetch and Download Assets before requested by the user  -->
+    <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/#section:resource-prefetching -->
+    <link rel="prefetch" href="">
+
+    <!-- #Page Prefetching -->
+    <!-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching -->
+    <link rel="prefetch" href="index.html">
+
+    <!-- #Typekit -->
+
+    <title>Six Degrees Travel. | Your Travel Evolved. One Degree at a Time.</title>
+    <meta name="description" content="">
+    <meta name="robots" content="all">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- MS Tap Highlight for Windows Phones -->
+    <!-- The tag is specific to Internet Explorer 10 on Windows Phone, and does not apply to Internet Explorer 10 on Windows. -->
+    <!-- http://stackoverflow.com/questions/7508100/webkit-tap-highlight-color-in-windows-phone -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Windows 8 Start Tile -->
+    <meta name="application-name" content=""/>
+    <meta name="msapplication-TileColor" content="#"/>
+    <meta name="msapplication-TileImage" content="start.png"/>
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <!-- http://mathiasbynens.be/notes/rel-shortcut-icon -->
+    <!-- http://mathiasbynens.be/notes/touch-icons -->
+
+    <!-- CSS, you gotta have style -->
+    <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.4/leaflet.fullscreen.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Modernizer, cause some browsers suck -->
+    <script src="js/libs/modernizr.js"></script>
+
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+    <style>
+      * { margin:0; padding:0; }
+      #map { position:absolute; top:0; bottom:0; width:100%; }
+      header, footer {
+        position: fixed;
+        z-index: 10000;
+        background: #1d2636;
+        width: 100%;
+        color: #fff;
+      }
+      header {
+        top: 0; left: right: 0; padding: .5em 0;
+      }
+      footer {bottom: 0; left: 0; right: 0; padding: .5em 0;}
+      nav {
+        float: right;
+        margin-top: .5em;
+      }
+      nav li {
+        list-style-type: none; 
+        display: inline;
+        text-transform: uppercase;
+        margin-right: 1em;
+      }
+      a {color: #fff; text-decoration: none;}
+      footer a {border-bottom: 1px dotted #FFF;}
+      .avatar {margin-left: 1em;}
+    </style>
+  </head>
+<body>
+
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.4/Leaflet.fullscreen.min.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.4/leaflet.fullscreen.css' rel='stylesheet' />
+
+  <header>
+    <div class="wrapper">
+      <a href="/" class="logo"><img src="img/logo.png" width="200"></a>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Discover</a></li>
+          <li><a href="">Connections</a></li>
+          <li><a href="">Messages</a></li>
+          <li><a href="">Photos</a></li>
+          <li>
+            <a href="">
+              Hi, Mina!
+              <img src="https://avatars1.githubusercontent.com/u/876210?v=3&s=20" width="20" class="avatar">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id='map'></div>
+
+  <footer>
+    <div class="wrapper">
+      <p>Copyright 2015 &copy; Six Degress Travel. <a href="">about</a> | <a href="">contact</a> | <a href="">help</a> | <a href="">terms</a></p>
+    </div>
+  </footer>
+
+  <script>
+  L.mapbox.accessToken = 'pk.eyJ1IjoicGlua3BpeGVscyIsImEiOiJBWnprQjlJIn0._oNvhn0qHj2FM9piKz_TTg';
+  var map = L.mapbox.map('map', 'pinkpixels.l8hgp4m8')
+      .setView([38.72, -96.5], 5);
+
+  L.control.fullscreen().addTo(map);
+  </script>
+
+</body>
+</html>
+
+
